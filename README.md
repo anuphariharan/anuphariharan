@@ -5,7 +5,13 @@
 Software architect in New York with 20+ years of experience building enterprise-scale
 platforms across financial services, healthcare, and AI-integrated applications.
 
+<img src="assets/divider.svg" alt="" width="100%">
+
 ## 📘 Layered Volatility Decomposition
+
+<a href="https://www.amazon.com/dp/B0H5G1SC1R">
+  <img align="right" width="225" src="assets/book.svg" alt="The book: Layered Volatility Decomposition — Software Architecture in the Age of AI">
+</a>
 
 *Software Architecture in the Age of AI*
 
@@ -19,11 +25,15 @@ so dependency cycles cannot occur by construction.
 - **[The book on Amazon](https://www.amazon.com/dp/B0H5G1SC1R)** — hardcover,
   paperback, and Kindle
 
+<br clear="both">
+
 ## What I work on
 
-- Distributed systems design and software architecture
-- Performance and reliability engineering
-- AI-integrated systems — agents, MCP, and tool design
+<p align="center">
+  <img src="assets/focus.svg" alt="Distributed systems: architecture and design of enterprise-scale platforms. Performance: latency, throughput and reliability engineering. AI systems: agents, MCP and tool design." width="100%">
+</p>
+
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## Elsewhere
 

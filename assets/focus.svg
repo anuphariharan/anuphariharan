@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 230" width="1280" height="230" role="img">
+  <title>What I work on</title>
+  <desc>Distributed systems design and software architecture; performance and reliability engineering; AI-integrated systems with agents, MCP and tool design.</desc>
+  <defs>
+    <radialGradient id="bgF" cx="50%" cy="0%" r="120%">
+      <stop offset="0%" stop-color="#0d1c3c"/>
+      <stop offset="60%" stop-color="#071022"/>
+      <stop offset="100%" stop-color="#02060e"/>
+    </radialGradient>
+    <linearGradient id="gauge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fb868"/><stop offset="0.6" stop-color="#e08a3a"/><stop offset="1" stop-color="#ef4b4f"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .sans  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .title { font-size: 23px; font-weight: 700; fill: #ede8de; }
+    .body  { font-size: 18px; fill: #a9b9da; }
+    .card  { fill: #0a1428; fill-opacity: 0.55; stroke: #22395f; stroke-width: 1.2; }
+
+    @keyframes dash    { to { stroke-dashoffset: -34; } }
+    @keyframes nodeP   { 0%,100% { opacity: 0.45; } 50% { opacity: 1; } }
+    @keyframes drawIn  { 0% { stroke-dashoffset: 320; } 55% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; } }
+    @keyframes blip    { 0%,100% { opacity: 0.15; } 50% { opacity: 0.95; } }
+
+    .edge  { stroke: #3b8bde; stroke-width: 1.8; stroke-dasharray: 5 12; animation: dash 4.5s linear infinite; }
+    .node  { animation: nodeP 5s ease-in-out infinite; }
+    .spark { stroke-dasharray: 320; stroke-dashoffset: 0; animation: drawIn 7s ease-in-out infinite; }
+    .arc   { stroke-dasharray: 190; stroke-dashoffset: 0; animation: drawIn 8s ease-in-out infinite; }
+    .blip  { animation: blip 4s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <rect width="1280" height="230" rx="18" fill="url(#bgF)"/>
+
+  <!-- panel 1: distributed systems -->
+  <g>
+    <rect class="card" x="22" y="20" width="400" height="190" rx="14"/>
+    <g>
+      <path class="edge" d="M64 128 L106 84"/>
+      <path class="edge" d="M106 84 L148 120" style="animation-delay:-1.5s"/>
+      <path class="edge" d="M64 128 L124 158" style="animation-delay:-3s"/>
+      <path class="edge" d="M124 158 L148 120" style="animation-delay:-2.2s"/>
+      <circle class="node" cx="64" cy="128" r="9" fill="#0d3160" stroke="#3b8bde" stroke-width="2"/>
+      <circle class="node" cx="106" cy="84" r="11" fill="#0b3a5d" stroke="#2fa0c9" stroke-width="2" style="animation-delay:-1.2s"/>
+      <circle class="node" cx="148" cy="120" r="9" fill="#0d3160" stroke="#3b8bde" stroke-width="2" style="animation-delay:-2.4s"/>
+      <circle class="node" cx="124" cy="158" r="7.5" fill="#094330" stroke="#3fb868" stroke-width="2" style="animation-delay:-3.6s"/>
+    </g>
+    <text class="sans title" x="176" y="102">Distributed systems</text>
+    <text class="sans body" x="176" y="134">Architecture and design of</text>
+    <text class="sans body" x="176" y="160">enterprise-scale platforms</text>
+  </g>
+
+  <!-- panel 2: performance & reliability -->
+  <g>
+    <rect class="card" x="440" y="20" width="400" height="190" rx="14"/>
+    <path d="M478 158 a 60 60 0 0 1 120 0" fill="none" stroke="#1c3156" stroke-width="10" stroke-linecap="round"/>
+    <path class="arc" d="M478 158 a 60 60 0 0 1 120 0" fill="none" stroke="url(#gauge)" stroke-width="10" stroke-linecap="round"/>
+    <polyline class="spark" points="470,186 492,180 510,184 532,172 554,178 576,164 598,170 606,162"
+              fill="none" stroke="#3fb868" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="sans title" x="650" y="102">Performance</text>
+    <text class="sans body" x="650" y="134">Latency, throughput and</text>
+    <text class="sans body" x="650" y="160">reliability engineering</text>
+  </g>
+
+  <!-- panel 3: AI agents & MCP -->
+  <g>
+    <rect class="card" x="858" y="20" width="400" height="190" rx="14"/>
+    <g>
+      <rect x="896" y="64" width="120" height="28" rx="8" fill="#6e1c22" stroke="#ef4b4f" stroke-opacity="0.8"/>
+      <text class="sans" x="956" y="83" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="1.5" fill="#f3b9ba">AGENT</text>
+      <rect x="896" y="104" width="120" height="28" rx="8" fill="#4e4310" stroke="#c4b13a" stroke-opacity="0.75"/>
+      <text class="sans" x="956" y="123" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="1.5" fill="#e3d98a">MCP</text>
+      <rect x="896" y="144" width="120" height="28" rx="8" fill="#0b2a55" stroke="#3a6fd8" stroke-opacity="0.7"/>
+      <text class="sans" x="956" y="163" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="1.5" fill="#9db8e8">TOOLS</text>
+      <circle class="blip" cx="1032" cy="78"  r="4" fill="#ef7a7d"/>
+      <circle class="blip" cx="1032" cy="118" r="4" fill="#c4b13a" style="animation-delay:-1.3s"/>
+      <circle class="blip" cx="1032" cy="158" r="4" fill="#3b8bde" style="animation-delay:-2.6s"/>
+    </g>
+    <text class="sans title" x="1062" y="102">AI systems</text>
+    <text class="sans body" x="1062" y="134">Agents, MCP and</text>
+    <text class="sans body" x="1062" y="160">tool design</text>
+  </g>
+</svg>
